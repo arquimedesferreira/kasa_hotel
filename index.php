@@ -1,13 +1,6 @@
-<!DOCTYPE html>
+<?php get_header();?>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-
-    <body>
         <h1>Apenas Teste </h1>
-    </body>
 
 
-</html>
+<?php wp_footer();?>
