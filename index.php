@@ -17,4 +17,19 @@
                 }
         ?>
 
+
+<div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            <h2>A title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 <?php get_footer();?>
