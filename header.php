@@ -23,6 +23,14 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="nav nav-tabs">
+
+            <?php 
+               $args =array(
+                 'theme_location'=>'header-menus'
+                );
+                 wp_nav_menu($args);
+                 ?>
+
             <li class="nav-item">
               <a href="#" class="active nav-link">Home</a>
             </li>
@@ -37,3 +45,6 @@
       </div>
     </div>
   </div>  
+
+
+  

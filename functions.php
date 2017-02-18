@@ -67,3 +67,8 @@ add_action('init', 'mostrar_post_item');
 add_action('init', 'criar_post_carrocel');
 
 
+function registrar_menu_header(){
+   register_nav_menu( 'heder-menu','main-menu' );
+}
+
+add_action('init','registrar_menu_header');
