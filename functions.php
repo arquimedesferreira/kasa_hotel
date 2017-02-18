@@ -8,7 +8,7 @@ $labes=array(
     'add_new_item'=> 'Registrar Item',
     'add_item'=>' Editar Imóvel'
 );
-
+// Define o que vai ter no tela do novo tipo de post 
 $suports= array(
     'title',
     'editor',
