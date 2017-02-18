@@ -1,25 +1,7 @@
 <?php get_header();?>
 <?php $home_index = get_template_directory_uri();?>
 
- <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="#" class="active nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Messages</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>                         
+                        
     
 
     <!---  Carrocel de imagems  -->
@@ -68,7 +50,7 @@
     </div>
   <!--- Fim do  Carrocel de imagems  -->
 
-  
+
 <div class="section">
       <div class="container">
         <!--Inicio do Looop -->

@@ -17,3 +17,23 @@
         
     </head>
   <body>
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="active nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Messages</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  

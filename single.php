@@ -1,6 +1,11 @@
 <?php get_header();?>
 <?php $home_single_page = get_template_directory_uri();?>
 
+
+
+
+
+
 <?php 
     if ( have_posts() ) {
             while ( have_posts() ) {
