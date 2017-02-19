@@ -10,6 +10,8 @@ function mostrar_post_item(){
     'name_singular'=>'Item',
     'add_new_item'=> 'Registrar Item',
     'add_item'=>' Editar Item',
+    'edit_item'=>'Editar Item',
+    'new_item'=> 'Novo Item'
    
     );
     // Define o que vai ter no tela do novo tipo de post 
@@ -38,7 +40,7 @@ function criar_post_carrocel(){
     $labes=array(
     'name'=>'Carrocel',
     'name_singular'=>'Carrocel',
-    'add_new_item'=> 'Carrocel',
+    'add_new_item'=> ' Add Carrocel',
     'add_item'=>' Editar',
    
     );
