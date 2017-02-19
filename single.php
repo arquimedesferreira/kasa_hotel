@@ -1,7 +1,9 @@
 <?php get_header();?>
 
 <?php 
+//Pagina  Simples onde se mostra os Itens dos post
     if ( have_posts() ) {
+
             while ( have_posts() ) {
                 the_post(); 
                
