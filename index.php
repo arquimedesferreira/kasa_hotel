@@ -1,10 +1,9 @@
 <?php get_header();?>
-<?php $home_index = get_template_directory_uri();?>
 
                         
     
 
-    <!---  Carrocel de imagems  -->
+ <!---  Carrocel de imagems  -->
    
  <div id="fullcarousel-example" data-interval="false" class="carousel slide"
     data-ride="carousel">
@@ -55,8 +54,18 @@
       <div class="container">
         <!--Inicio do Looop -->
         <div class="row">
-         <?php  
-              $args= array( 'post_type'=>'item' );
+         <?php /// Busca todos os itens 
+              $taxQuery=array(
+                        array(
+                          'taxonomy'=>'categoria',
+                          'field'=>'slug',
+                          'terms'=>'casa'
+                          )
+                      ); 
+              $args= array( 
+                'post_type'=>'item',
+                'tax_query'=>$taxQuery
+                );
                $loop =new  WP_Query($args);
                 if($loop->have_posts()){
                         while($loop->have_posts()){ 
