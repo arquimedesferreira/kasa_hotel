@@ -255,8 +255,7 @@ div {
     display: block;
 }
 
-@media (min-width: 992px)
-.col-md-3 {
+@media (min-width: 992px).col-md-3{
     width: 25%;
 }
 @media (min-width: 992px)

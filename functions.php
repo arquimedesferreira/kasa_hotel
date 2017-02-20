@@ -84,3 +84,21 @@ function registrar_menu_header(){
 }
 
 add_action('init','registrar_menu_header');
+
+function registra_tax_categoria(){
+    $labels=array(
+        'name'=>'Categorias',
+        'singular_name'=>'Categoria',
+        'add_new_item'=>'Nova Categoria'
+    );
+    
+    $args=array(
+        'labels'=>$labels,
+        'public'=>true,
+        'hierarchical'=>true
+    );
+    
+    register_taxonomy('categoria','item',$args);
+
+}
+add_action('init','registra_tax_categoria');
