@@ -54,6 +54,7 @@
 <div class="section">
       <div class="container">
         <!--Inicio do Looop -->
+        <div class="row">
          <?php  
               $args= array( 'post_type'=>'item' );
                $loop =new  WP_Query($args);
@@ -62,7 +63,7 @@
                          $loop->the_post();
         ?>   
         <a href="<?php the_permalink(); ?>">
-            <div class="row">
+            
             <!--Coluna  -->
               <div class="col-md-3">
                 <img class="img-responsive" src="<?php the_post_thumbnail_url();?>">
@@ -71,11 +72,12 @@
                 <p><?=the_content(); ?></p>
                   
               </div>
+            </a> 
               <?php                  
                             }
                     }?>
-            </div>
-        </a>   
+          </div>  
+          
       </div>
     </div>
 <?php get_footer();?>

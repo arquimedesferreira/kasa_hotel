@@ -16,7 +16,7 @@
         <!-- CSS sepados para cada item  -->
         <link rel="stylesheet" href="<?= $home ?>/assets/css/reset.css">
 	      <link rel="stylesheet" href="<?= $home; ?>/assets/css/comum.css">
-	      <link rel="stylesheet" href="<?= $home; ?>/assets/css/header.css">
+	      <link rel="stylesheet" href="<?= $home; ?>/assets/css/ddheader.css">
 
 
         <link rel="stylesheet" type="text/css" href="<?=$home; ?>/style.css">
@@ -36,35 +36,36 @@
     <header>
     <div class="container">
               <?php 
-               $args =array('theme_location'=>'header-menus','show_home'=>'Home');
-               wp_page_menu($args);
+               //$args =array('theme_location'=>'header-menus','show_home'=>'Home');
+               //wp_page_menu($args);
               ?>
       </div>
     </header
 
 
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-
-           
-
-            <li class="nav-item">
-              <a href="#" class="active nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Messages</a>
-            </li>
-          </ul>
+<div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>Brand</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active testeindex">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>  
 
 
   
