@@ -61,7 +61,7 @@
           <option value="<?=$taxonomya->slug; ?>"> <?=$taxonomya->name;?></option>
       </select>
 
-      <button type="submit">
+      <button type="submit" >
             Filtrar
       </button>
 </form>
