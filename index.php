@@ -50,6 +50,23 @@
   <!--- Fim do  Carrocel de imagems  -->
 
 
+
+
+
+<!--Busca de  itens -->
+<?php  $taxonomya = get_terms('categoria'); ?>
+<form>
+      <select name="taxonomy">
+          <option value=""> Todos os Itens</option>
+          <option value="<?=$taxonomya->slug; ?>"> <?=$taxonomya->name;?></option>
+      </select>
+
+      <button type="submit">
+            Filtrar
+      </button>
+</form>
+
+
 <div class="section">
       <div class="container">
         <!--Inicio do Looop -->
@@ -59,7 +76,7 @@
                         array(
                           'taxonomy'=>'categoria',
                           'field'=>'slug',
-                          'terms'=>'casa'
+                          'terms'=>$_GET['taxonomy']
                           )
                       ); 
               $args= array( 
